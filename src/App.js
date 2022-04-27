@@ -25,7 +25,7 @@ onSignInSubmit=()=>{
   var num = this.state.phonenumber;
   var n = num.toString();
   console.log(typeof n)
-  var phoneNumber = "+923461208184";
+  var phoneNumber = "+91"+n
   var appVerifier = window.recaptchaVerifier;
   firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
   .then(function (confirmationResult) {
